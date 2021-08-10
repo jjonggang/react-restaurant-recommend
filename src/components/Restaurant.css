@@ -4,9 +4,12 @@
 
 #cards{
     width: 650px;
-    margin: 0 auto;
+    margin: 0 auto; 
     overflow: hidden;
     padding-top: 10px;
+}
+
+#image{
 }
 
 #name{
