@@ -18,6 +18,7 @@ class Detail extends React.Component{
                     </React.Fragment>
                     <React.Fragment>
                         <Container fixed id="video">
+                            {/* <VideoClip key = {ajou.id} id = {ajou.id} name={ajou.name} image={ajou.image} detail={ajou.detail} /> */}
                             <Typography component="div" style={{ backgroundColor: '#CCEEFC', height: '50vh' }}>
                                 유튜브 클립 및 간단한 설명 들어갈 자리 <br/><br/>
                                 <h2>props 사용 방식<br/></h2>
@@ -33,6 +34,7 @@ class Detail extends React.Component{
                     </React.Fragment>
                     <React.Fragment>
                         <Container fixed id="gps">
+                              {/* <GPSMap key = {ajou.id} id = {ajou.id} name={ajou.name} image={ajou.image} detail={ajou.detail} /> */}
                             <Typography component="div" style={{ backgroundColor: "#87FFB9", height: '50vh' }}>GPS 들어갈 자리</Typography>
                         </Container>
                     </React.Fragment>
