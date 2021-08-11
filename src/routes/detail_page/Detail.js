@@ -16,11 +16,3 @@ class Detail extends React.Component{
     }
 }
 export default Detail;
-
-// function Detail(props){
-//     return(
-//         <span>{this.props.name}</span>
-//     );
-// }
-
-// export default Detail;
