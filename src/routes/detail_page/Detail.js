@@ -2,6 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
 import './Detail.css'
 
 
@@ -20,6 +21,9 @@ class Detail extends React.Component{
                         <Container fixed id="video">
                             {/* <VideoClip key = {ajou.id} id = {ajou.id} name={ajou.name} image={ajou.image} detail={ajou.detail} /> */}
                             <Typography component="div" style={{ backgroundColor: '#CCEEFC', height: '50vh' }}>
+                            <Button variant="contained" color="primary">
+                                Primary
+                            </Button>
                                 유튜브 클립 및 간단한 설명 들어갈 자리 <br/><br/>
                                 <h2>props 사용 방식<br/></h2>
                                 <p>
