@@ -20,7 +20,6 @@ const useStyles = makeStyles({
     },
   });
   
-
 function Restaurant({id, name, image, detail}) {
   const [likeIcon, setLikeIcon] = useState(false);
 
