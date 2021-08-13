@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
   });
   
-function Restaurant({id, name, image, detail}) {
+function Restaurant({id, name, image, detail, place, phone, address, time}) {
   const [likeIcon, setLikeIcon] = useState(false);
 
   const changeLikeIcon = () => {
@@ -77,7 +77,11 @@ function Restaurant({id, name, image, detail}) {
                           id, 
                           name, 
                           image, 
-                          detail
+                          detail,
+                          place,
+                          phone,
+                          address,
+                          time
                         },
                       }}>
                       <Button variant="contained" color="primary" id="button2">{<HelpIcon/>}</Button>
