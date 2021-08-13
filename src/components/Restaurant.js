@@ -47,10 +47,10 @@ function Restaurant({id, name, image, detail, place, phone, address, time}) {
               />
               <CardContent className = "parent">
                 <div className = "child">
-                  <Typography id = "restaurantName" gutterBottom variant="h5" component="h2">
+                  <Typography id = "restaurantName" color = "primary" gutterBottom variant="h5" component="h2">
                     {name}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
+                  <Typography variant="body2" color="black" component="p">
                     {detail}
                   </Typography>
                 </div>
