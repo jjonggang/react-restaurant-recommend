@@ -1,27 +1,42 @@
-*{
-    margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#cards{
-    width: 650px;
-    margin: 0 auto; 
-    overflow: hidden;
-    padding-top: 10px;
+#cards {
+  width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 10px;
 }
 
-#image{
+#contents {
+  float: left;
 }
 
-#name{
-    text-align: center;
+.parent {
+  display: flex;
 }
 
-#detail{
-    text-align: center;
+.child {
+  flex: 1;
+  text-align: left;
 }
 
-article{
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
+#likeButton {
+  text-align: right;
+}
+
+#detail {
+  text-align: center;
+}
+
+#button2 {
+  margin-top: 5px;
+}
+
+article {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
