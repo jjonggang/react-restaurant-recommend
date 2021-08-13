@@ -5,7 +5,7 @@ function About(){
     return(
         <div className="about__container">
             <span>
-                React Study
+                Restaurant Recommend
             </span>
             <span>박은경 박종경 최준호</span>
         </div>
