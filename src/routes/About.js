@@ -7,7 +7,7 @@ function About(){
             <span>
                 React Study
             </span>
-            <span>최준호 박은경 박종경</span>
+            <span>박은경 박종경 최준호</span>
         </div>
     );
 }

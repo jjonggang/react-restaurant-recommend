@@ -69,11 +69,3 @@ class Detail extends React.Component{
 }
 export default Detail;
 
-{/* <div>
-                
-                <h1>{location.state.id}!</h1>
-                <h2>{location.state.name}</h2>
-                <h3>{location.state.detail}</h3>
-                <img src={location.state.image} alt = "음식 사진"/>
-
-            </div> */}
