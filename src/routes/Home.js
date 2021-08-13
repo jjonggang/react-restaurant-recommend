@@ -9,7 +9,7 @@ import './Home.css'
 
 class Home extends React.Component{
     state = {
-        isLoading: true,
+        isLoading: false,
         ajouRestaurant: [
             {
             id: 1,
@@ -49,12 +49,12 @@ class Home extends React.Component{
             }
         ],
     };
-    componentDidMount() {
-        const {isLoading} = this.state;
-        setTimeout(() => {
-            this.setState({isLoading: false});
-          }, 0);
-    }
+    // componentDidMount() {
+    //     const {isLoading} = this.state;
+    //     setTimeout(() => {
+    //         this.setState({isLoading: false});
+    //       }, 0);
+    // }
     render(){
         const {isLoading, ajouRestaurant} = this.state;
         return(
