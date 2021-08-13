@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
   });
   
-  function Restaurant({id, name, image, detail}) {
+  function Restaurant({id, name, image, detail,place,phone,address,time}) {
   
     const classes = useStyles();
   
@@ -29,7 +29,11 @@ const useStyles = makeStyles({
             id, 
             name, 
             image, 
-            detail
+            detail,
+            place,
+            phone,
+            address,
+            time
           },
         }}>
         <article>
