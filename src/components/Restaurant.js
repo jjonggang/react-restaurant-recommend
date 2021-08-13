@@ -5,6 +5,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import HelpIcon from '@material-ui/icons/Help';
+import ThumbUp from '@material-ui/icons/ThumbUp';
+import ThumbUpOutlined from '@material-ui/icons/ThumbUpOutlined';
 import { Link } from 'react-router-dom';
 import './Restaurant.css'
 
@@ -22,17 +25,7 @@ const useStyles = makeStyles({
     const classes = useStyles();
   
     return (
-      <Link
-        to = {{
-          // eslint-disable-next-line no-template-curly-in-string
-          pathname: `/detail/${id}`,
-          state: {
-            id, 
-            name, 
-            image, 
-            detail
-          },
-        }}>
+     
         <article>
           <Card className={classes.root} id = "cards" elevation = '0' variant="outlined">
               <div>
@@ -53,18 +46,27 @@ const useStyles = makeStyles({
                     </Typography>
                   </div>
                   <div className = "child" id = "likeButton">   
-                    <Button variant="contained" color="primary" id="button1">
-                      Primary
-                    </Button>
-                    <Button variant="contained" color="primary" id="button2">
-                      detail
-                    </Button>
+                    <div><Button variant="contained" color="primary" id="button1">{<ThumbUpOutlined/>}</Button></div>
+                    <div>
+                      <Link
+                        to = {{
+                          // eslint-disable-next-line no-template-curly-in-string
+                          pathname: `/detail/${id}`,
+                          state: {
+                            id, 
+                            name, 
+                            image, 
+                            detail
+                          },
+                        }}>
+                        <Button variant="contained" color="primary" id="button2">{<HelpIcon/>}</Button>
+                      </Link>                  
+                    </div>
                   </div>
                 </CardContent>
               </div>
             </Card>
         </article>
-      </Link>
     );
   }
 
