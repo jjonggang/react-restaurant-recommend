@@ -90,7 +90,7 @@ class Home extends React.Component{
                 <div className = "parent">
                     <div className = "child">
                         {ajouRestaurant.map(ajou => (
-                            <Restaurant key = {ajou.id} id = {ajou.id} name={ajou.name} image={ajou.image} detail={ajou.detail} />
+                            <Restaurant key = {ajou.id} id = {ajou.id} name={ajou.name} image={ajou.image} detail={ajou.detail} place={ajou.place} phone={ajou.phone} address={ajou.address} time={ajou.time} />
                         ))}
                     </div>
                     {/* <div className = "child" id="likeList">
